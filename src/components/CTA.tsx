@@ -46,7 +46,7 @@ export const CTA = () => {
                     Osman Mah
                   </h4>
                   <p className="text-sm text-gray-400 text-center">
-                    Project Supervisor
+                    Director
                   </p>
                 </div>
                 
