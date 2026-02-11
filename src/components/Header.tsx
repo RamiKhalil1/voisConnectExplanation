@@ -24,9 +24,9 @@ export const Header = () => {
                 className="h-10 sm:h-12 drop-shadow-lg"
               />
             </div>
-            <div className="hidden sm:block border-l border-primary-800/50 pl-4">
-              <div className="text-xs text-primary-400 uppercase tracking-widest font-semibold">Orchestrating Platform</div>
-              <div className="text-xl font-bold text-white tracking-tight">VOIS Connect</div>
+            <div className="border-l border-primary-800/50 pl-2 sm:pl-4">
+              <div className="hidden sm:block text-xs text-primary-400 uppercase tracking-widest font-semibold">Orchestrating Platform</div>
+              <div className="text-base sm:text-xl font-bold text-white tracking-tight">VOIS Connect</div>
             </div>
           </div>
           
