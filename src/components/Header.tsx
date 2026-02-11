@@ -1,15 +1,15 @@
 export const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-darkblue-900/98 backdrop-blur-lg border-b border-primary-800/30 shadow-xl shadow-black/30">
-      <nav className="container mx-auto px-6 py-3">
+      <nav className="container mx-auto px-4 sm:px-6 py-2 sm:py-3">
         <div className="flex items-center justify-between">
           {/* Logo and Branding */}
-          <div className="flex items-center space-x-4 group">
-            <div className="h-12 flex items-center transition-transform duration-300 group-hover:scale-105">
+          <div className="flex items-center space-x-2 sm:space-x-4 group">
+            <div className="h-10 sm:h-12 flex items-center transition-transform duration-300 group-hover:scale-105">
               <img 
                 src="/pics/voisConnectlogo.svg" 
                 alt="VOIS Connect Logo" 
-                className="h-12 drop-shadow-lg"
+                className="h-10 sm:h-12 drop-shadow-lg"
               />
             </div>
             <div className="hidden sm:block border-l border-primary-800/50 pl-4">
