@@ -19,7 +19,7 @@ export const Hero = () => {
           
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in px-2" style={{animationDelay: '0.2s'}}>
             Every Machine Tells a Story.
-            <br className="hidden sm:block" />
+            <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600">
               We Built the Platform to Read It.
             </span>
