@@ -1,4 +1,16 @@
+import { useState } from 'react'
+
 export const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false)
+  }
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-darkblue-900/98 backdrop-blur-lg border-b border-primary-800/30 shadow-xl shadow-black/30">
       <nav className="container mx-auto px-4 sm:px-6 py-2 sm:py-3">
@@ -42,15 +54,62 @@ export const Header = () => {
             </a>
           </div>
           
-          {/* Mobile Menu Icon Placeholder - Optional */}
+          {/* Mobile Menu Icon */}
           <div className="md:hidden">
-            <button className="text-gray-300 hover:text-primary-400 p-2">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
+            <button onClick={toggleMobileMenu} className="text-gray-300 hover:text-primary-400 p-2 transition-colors">
+              {isMobileMenuOpen ? (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
             </button>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden mt-4 pb-4 space-y-2 animate-fade-in">
+            <a 
+              href="#team" 
+              onClick={closeMobileMenu}
+              className="block px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-primary-900/30 transition-all duration-300 font-medium"
+            >
+              Team
+            </a>
+            <a 
+              href="#gap" 
+              onClick={closeMobileMenu}
+              className="block px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-primary-900/30 transition-all duration-300 font-medium"
+            >
+              Features
+            </a>
+            <a 
+              href="#architecture" 
+              onClick={closeMobileMenu}
+              className="block px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-primary-900/30 transition-all duration-300 font-medium"
+            >
+              Architecture
+            </a>
+            <a 
+              href="#challenges" 
+              onClick={closeMobileMenu}
+              className="block px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-primary-900/30 transition-all duration-300 font-medium"
+            >
+              Challenges
+            </a>
+            <a 
+              href="#technology" 
+              onClick={closeMobileMenu}
+              className="block px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-primary-900/30 transition-all duration-300 font-medium"
+            >
+              Technology
+            </a>
+          </div>
+        )}
       </nav>
     </header>
   )
