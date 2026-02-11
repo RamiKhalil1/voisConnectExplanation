@@ -83,15 +83,6 @@ export const Challenges = () => {
     }
   ]
 
-  const techStack = [
-    { category: 'Backend', techs: ['Node.js + Hono', 'TypeScript', 'Microservices'] },
-    { category: 'Databases', techs: ['MongoDB (Mongoose)', 'TimescaleDB', 'Redis'] },
-    { category: 'Messaging', techs: ['Apache Kafka', 'MQTT (TBMQ)', 'WebSockets'] },
-    { category: 'Infrastructure', techs: ['Docker', 'TurboRepo', 'pnpm workspaces'] },
-    { category: 'Frontend', techs: ['React', 'TanStack Query', 'Jotai', 'Shadcn UI'] },
-    { category: 'Real-Time', techs: ['Socket.io', 'Redis Pub/Sub', 'WebRTC'] }
-  ]
-
   return (
     <section id="challenges" className="py-24 px-6 bg-gradient-to-b from-darkblue-800 via-darkblue-850 to-darkblue-900 relative">
       {/* Accent elements */}

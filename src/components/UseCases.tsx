@@ -1,4 +1,4 @@
-import { Workflow, Activity, Radio, LineChart } from 'lucide-react'
+import { Radio, LineChart } from 'lucide-react'
 
 export const UseCases = () => {
   return (
