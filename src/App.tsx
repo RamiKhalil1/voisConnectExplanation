@@ -13,7 +13,7 @@ import { Footer } from './components/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen bg-darkblue-900">
+    <div className="min-h-screen bg-darkblue-900 overflow-x-hidden max-w-full">
       <Header />
       <Hero />
       <Team />

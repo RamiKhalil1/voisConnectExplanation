@@ -2,7 +2,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear()
   
   return (
-    <footer className="bg-darkblue-950 text-white py-12 px-6 border-t border-primary-900/30 relative">
+    <footer className="bg-darkblue-950 text-white py-8 md:py-12 px-4 md:px-6 border-t border-primary-900/30 relative overflow-x-hidden max-w-full">
       {/* Subtle gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none"></div>
       

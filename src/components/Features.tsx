@@ -2,7 +2,7 @@ import { X, Check } from 'lucide-react'
 
 export const Features = () => {
   return (
-    <section id="gap" className="py-24 px-6 bg-gradient-to-b from-darkblue-800 via-darkblue-850 to-darkblue-900 relative">
+    <section id="gap" className="py-12 md:py-20 lg:py-24 px-4 md:px-6 bg-gradient-to-b from-darkblue-800 via-darkblue-850 to-darkblue-900 relative overflow-x-hidden max-w-full">
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary-600/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary-700/5 rounded-full blur-3xl"></div>

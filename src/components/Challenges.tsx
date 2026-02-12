@@ -84,48 +84,48 @@ export const Challenges = () => {
   ]
 
   return (
-    <section id="challenges" className="py-24 px-6 bg-gradient-to-b from-darkblue-800 via-darkblue-850 to-darkblue-900 relative">
+    <section id="challenges" className="py-12 md:py-20 lg:py-24 px-4 md:px-6 bg-gradient-to-b from-darkblue-800 via-darkblue-850 to-darkblue-900 relative overflow-x-hidden max-w-full">
       {/* Accent elements */}
-      <div className="absolute top-1/3 left-0 w-80 h-80 bg-primary-600/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-1/3 left-0 w-80 h-80 bg-primary-600/5 rounded-full blur-3xl pointer-events-none"></div>
       
-      <div className="container mx-auto max-w-6xl relative z-10">
-        <div className="text-center mb-20">
+      <div className="container mx-auto max-w-6xl relative z-10 w-full px-0">
+        <div className="text-center mb-12 md:mb-16 lg:mb-20">
           <div className="inline-block mb-4">
             <span className="text-sm text-primary-400 bg-primary-950/50 px-4 py-2 rounded-full uppercase tracking-widest font-semibold border border-primary-800">
               Development Journey
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 md:mb-6">
             Challenges & Learnings
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Building an industrial IoT platform required learning new technologies, solving complex 
             architectural problems, and overcoming real-world integration challenges.
           </p>
         </div>
 
         {/* Challenges */}
-        <div className="space-y-8 mb-20">
+        <div className="space-y-6 md:space-y-8 w-full">
           {challenges.map((challenge, index) => {
             const Icon = challenge.icon
             return (
               <div 
                 key={index}
-                className="bg-darkblue-800 rounded-xl border border-primary-900 overflow-hidden"
+                className="bg-darkblue-800 rounded-xl border border-primary-900 overflow-hidden w-full"
               >
-                <div className="p-8">
-                  <div className="flex items-start gap-6 mb-6">
-                    <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-primary-900 to-darkblue-700 rounded-lg flex items-center justify-center">
-                      <Icon className="w-8 h-8 text-primary-400" />
+                <div className="p-4 md:p-6 lg:p-8">
+                  <div className="flex flex-col sm:flex-row items-start gap-3 md:gap-4 lg:gap-6 mb-4 md:mb-6">
+                    <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-primary-900 to-darkblue-700 rounded-lg flex items-center justify-center">
+                      <Icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-primary-400" />
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-white mb-3">{challenge.title}</h3>
-                      <div className="grid md:grid-cols-2 gap-6">
+                    <div className="flex-1 w-full">
+                      <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white mb-3 break-words">{challenge.title}</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
                         <div>
                           <div className="text-xs uppercase tracking-wider text-red-400 font-semibold mb-2">
                             The Challenge
                           </div>
-                          <p className="text-gray-300 leading-relaxed">
+                          <p className="text-sm md:text-base text-gray-300 leading-relaxed break-words">
                             {challenge.problem}
                           </p>
                         </div>
@@ -133,7 +133,7 @@ export const Challenges = () => {
                           <div className="text-xs uppercase tracking-wider text-green-400 font-semibold mb-2">
                             Our Solution
                           </div>
-                          <p className="text-gray-300 leading-relaxed">
+                          <p className="text-sm md:text-base text-gray-300 leading-relaxed break-words">
                             {challenge.solution}
                           </p>
                         </div>
@@ -141,15 +141,15 @@ export const Challenges = () => {
                     </div>
                   </div>
                   
-                  <div className="bg-darkblue-900 rounded-lg p-6 border border-darkblue-700">
-                    <div className="text-xs uppercase tracking-wider text-primary-400 font-semibold mb-3">
-                      What We Learned
+                  <div className="bg-darkblue-900 rounded-lg p-3 md:p-5 lg:p-6 border border-darkblue-700">
+                    <div className="text-xs uppercase tracking-wider text-primary-400 font-semibold mb-2 md:mb-3">
+                      Skills Gained
                     </div>
-                    <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 md:gap-x-6 lg:gap-x-8 gap-y-1.5 md:gap-y-2">
                       {challenge.learnings.map((learning, idx) => (
                         <div key={idx} className="flex items-start gap-2">
-                          <div className="flex-shrink-0 w-1.5 h-1.5 bg-primary-600 rounded-full mt-2"></div>
-                          <span className="text-sm text-gray-300">{learning}</span>
+                          <div className="flex-shrink-0 w-1.5 h-1.5 bg-primary-600 rounded-full mt-1.5"></div>
+                          <span className="text-xs sm:text-sm text-gray-300 leading-snug break-words">{learning}</span>
                         </div>
                       ))}
                     </div>

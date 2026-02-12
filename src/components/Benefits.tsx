@@ -2,7 +2,7 @@ import { Target } from 'lucide-react'
 
 export const Benefits = () => {
   return (
-    <section id="goal" className="py-24 px-6 bg-gradient-to-b from-darkblue-900 via-darkblue-850 to-darkblue-900 relative">
+    <section id="goal" className="py-12 md:py-20 lg:py-24 px-4 md:px-6 bg-gradient-to-b from-darkblue-900 via-darkblue-850 to-darkblue-900 relative overflow-x-hidden max-w-full">
       {/* Accent gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary-950/10 to-transparent pointer-events-none"></div>
       

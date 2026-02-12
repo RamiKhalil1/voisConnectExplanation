@@ -2,7 +2,7 @@ import { Globe, Linkedin } from 'lucide-react'
 
 export const CTA = () => {
   return (
-    <section className="py-24 px-6 bg-gradient-to-b from-darkblue-850 via-darkblue-900 to-darkblue-950 relative">
+    <section className="py-12 md:py-20 lg:py-24 px-4 md:px-6 bg-gradient-to-b from-darkblue-850 via-darkblue-900 to-darkblue-950 relative overflow-x-hidden max-w-full">
       {/* Subtle gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-950/10 via-transparent to-transparent pointer-events-none"></div>
       

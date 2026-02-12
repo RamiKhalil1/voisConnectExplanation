@@ -41,7 +41,7 @@ const teamMembers = [
 
 export const Team = () => {
   return (
-    <section id="team" className="py-24 px-6 bg-darkblue-900 relative overflow-hidden">
+    <section id="team" className="py-12 md:py-20 lg:py-24 px-4 md:px-6 bg-darkblue-900 relative overflow-x-hidden max-w-full">
       {/* Subtle accent overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-950/20 via-transparent to-transparent pointer-events-none"></div>
       

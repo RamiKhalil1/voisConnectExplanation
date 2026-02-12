@@ -71,7 +71,7 @@ export const WorkflowGuide = () => {
   }
 
   return (
-    <section id="workflow-guide" className="py-24 px-6 bg-darkblue-900 relative">
+    <section id="workflow-guide" className="py-12 md:py-20 lg:py-24 px-4 md:px-6 bg-darkblue-900 relative overflow-x-hidden max-w-full">
       {/* Subtle overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-darkblue-950/30 to-transparent pointer-events-none"></div>
       

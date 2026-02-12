@@ -1,13 +1,13 @@
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center hero-gradient text-white overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center hero-gradient text-white overflow-x-hidden max-w-full">
       {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary-600/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary-700/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
       </div>
       
-      <div className="container mx-auto px-4 sm:px-6 py-20 sm:py-32 text-center relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 py-20 sm:py-32 text-center relative z-10 w-full max-w-full">
         <div className="max-w-5xl mx-auto space-y-6 sm:space-y-10">
           <div className="space-y-4">
             <div className="inline-block animate-fade-in">

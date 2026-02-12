@@ -2,11 +2,11 @@ import { Radio, LineChart } from 'lucide-react'
 
 export const UseCases = () => {
   return (
-    <section id="technology" className="py-24 px-6 bg-gradient-to-b from-darkblue-900 to-darkblue-850 relative overflow-hidden">
+    <section id="technology" className="py-12 md:py-20 lg:py-24 px-4 md:px-6 bg-gradient-to-b from-darkblue-900 to-darkblue-850 relative overflow-x-hidden max-w-full">
       {/* Decorative elements */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary-700/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary-700/5 rounded-full blur-3xl pointer-events-none"></div>
       
-      <div className="container mx-auto max-w-6xl relative z-10">
+      <div className="container mx-auto max-w-6xl relative z-10 w-full">
         <div className="text-center mb-20">
           <div className="inline-block mb-4">
             <span className="text-sm text-primary-400 bg-primary-950/50 px-4 py-2 rounded-full uppercase tracking-widest font-semibold border border-primary-800">
@@ -14,12 +14,12 @@ export const UseCases = () => {
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            How It Works
+            What Benefit Does It Bring to Our Customers
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Our system integrates MQTT and Modbus protocols into a unified monitoring platform. The platform 
-            connects to existing industrial equipment and processes sensor data in real time, displaying 
-            predictive insights through an intuitive web dashboard.
+            Our system provides open system interface to the standard OT protocols like MQTT and Modbus, and it also 
+            interfaces with any existing IoT platforms through webhooks, APIs and more. The objective is to enforce 
+            data federation to gain control of the customer data.
           </p>
         </div>
         

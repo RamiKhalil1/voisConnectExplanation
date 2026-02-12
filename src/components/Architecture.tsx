@@ -2,7 +2,7 @@ import { Building2, Database, Network, Shield, Globe, Server } from 'lucide-reac
 
 export const Architecture = () => {
   return (
-    <section id="architecture" className="py-24 px-6 bg-gradient-to-br from-darkblue-800 via-darkblue-850 to-darkblue-900 relative">
+    <section id="architecture" className="py-12 md:py-20 lg:py-24 px-4 md:px-6 bg-gradient-to-br from-darkblue-800 via-darkblue-850 to-darkblue-900 relative overflow-x-hidden max-w-full">
       {/* Corner accents */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-primary-700/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-primary-600/5 rounded-full blur-3xl"></div>

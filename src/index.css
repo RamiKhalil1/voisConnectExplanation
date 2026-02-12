@@ -22,19 +22,37 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 @layer base {
-  body {
+  html, body {
     @apply bg-darkblue-900 text-gray-100;
+    overflow-x: hidden;
+    max-width: 100vw;
   }
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-semibold tracking-tight text-white;
   }
   
-  * {
+  *, *::before, *::after {
     @apply scroll-smooth;
+    box-sizing: border-box;
+  }
+  
+  /* Prevent horizontal overflow globally */
+  #root {
+    overflow-x: hidden;
+    max-width: 100vw;
+    width: 100%;
+  }
+  
+  /* Ensure all containers respect viewport width */
+  .container {
+    max-width: 100%;
+    width: 100%;
   }
 }
 

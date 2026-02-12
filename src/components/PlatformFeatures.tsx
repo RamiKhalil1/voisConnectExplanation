@@ -101,7 +101,7 @@ export const PlatformFeatures = () => {
   ]
 
   return (
-    <section id="features" className="py-24 px-6 bg-gradient-to-b from-darkblue-900 to-darkblue-950 relative overflow-hidden">
+    <section id="features" className="py-12 md:py-20 lg:py-24 px-4 md:px-6 bg-gradient-to-b from-darkblue-900 to-darkblue-950 relative overflow-x-hidden max-w-full">
       {/* Decorative accent */}
       <div className="absolute top-1/4 right-0 w-72 h-72 bg-primary-600/5 rounded-full blur-3xl"></div>
       
